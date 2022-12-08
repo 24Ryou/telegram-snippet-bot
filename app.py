@@ -47,7 +47,7 @@ def downloadimages(search_term): # Define the function to download images
   _get = lambda search_term : requests.get(f"https://source.unsplash.com/random/900x600/?"+str(search_term)+", allow_redirects=True")
   response = _get(search_term)
   _404 = "https://images.unsplash.com/source-404?fit=crop&fm=jpg&h=800&q=60&w=1200"
-  if response.url == _404 : response = _get("programming")
+  if response.url == _404 : response = _get("")
   # State the filename
   print("Saving to:" + savePath)
   # Write image file
