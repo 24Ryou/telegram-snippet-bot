@@ -40,7 +40,7 @@ def shortURL(URL):
 
 def downloadimages(search_term): # Define the function to download images
   print(f"https://source.unsplash.com/random/900x600/?"+str(search_term)+", allow_redirects=True") # State the URL
-  path = Path('D:\\Ali\\Projects\\_Snippet\\assets\\')
+  path = Path("D:\\Ali\\Projects\\telegram-snippet-bot\\assets")
   savePath = str(path) + "\\" + str(search_term) + ".png"
   # Loop for chosen amount of times
   # Download the photo(s)
